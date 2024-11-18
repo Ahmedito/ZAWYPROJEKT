@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symulacja Dopasowania Elementów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timer">Pozostały czas: <span id="countdown">10:00</span></div>
+    <progress id="progressBar" value="0" max="600"></progress>
+    
+    <div class="categories">
+        <div class="category" data-category="owoc">Kategoria: Owoce</div>
+        <div class="category" data-category="warzywo">Kategoria: Warzywa</div>
+    </div>
+    
+    <div class="items">
+        <div class="item" data-category="owoc" draggable="true" id="item1">Jabłko</div>
+        <div class="item" data-category="warzywo" draggable="true" id="item2">Marchewka</div>
+    </div>
+    
+    <div id="message" class="hidden">Czas się skończył!</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!--obsluga czasu na gorzze ma byc odliczany czas i jak wybierze sie element i jesli sie go wrzuci do kategorii on znika 
+za 5 sekund a jak byl zly ten element to znika i pojawia sie znowu na liscie a jak dobrze to zostaje,po uplywie czasu komunikat ze czas sie skonczyl
+Zrobic taka symulacje tych elementow nie robic funkcjonalnosci jedynie maja byc wymyslone elementy i kategorie ale ma byc do nich przypisane to ze wracaja na swoje
+miejsce po 5 sekundach jesli zle sie dopasuje do kategorii, dopiero po umieszczeniu w kategorii jest odliczany czas 5 sekund i element ktory zle zostal
+dopasowany ma byc kolorowany na czerwono -->
+
